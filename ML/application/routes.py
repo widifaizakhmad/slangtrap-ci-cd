@@ -156,6 +156,7 @@ def predict_sign_language(user):
         
     word_rfc = separated.join(characters_rfc)
     
+    
             
 
     
