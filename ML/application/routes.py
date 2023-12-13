@@ -25,6 +25,9 @@ mp_drawing_styles = mp.solutions.drawing_styles
 
 hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
+@app.route('/')
+def index():
+    return 'API and CI/CD is running!'
 
 
 @app.route('/sign_language_translation/upload_image/<user>', methods=['POST'])
