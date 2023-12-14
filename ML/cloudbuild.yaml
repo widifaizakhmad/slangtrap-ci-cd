@@ -21,4 +21,4 @@ steps:
 
 # Store images
 #images:
- # - 'gcr.io/$PROJECT_ID/taufiksatrianugraha/fruitarians-model'
+ # - 'gcr.io/$PROJECT_ID/slangtrap-model'
