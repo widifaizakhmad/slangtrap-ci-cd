@@ -14,7 +14,7 @@ steps:
       - '-c'
       - |
         gcloud run deploy slangtrapdev-notfintel \
-          --image gcr.io/$PROJECT_ID/widifaizakhmad/slangtrapdev-notfintel \
+          --image gcr.io/$PROJECT_ID/slangtrapdev-notfintel \
           --region asia-southeast2 \
           --platform managed \
           --allow-unauthenticated
