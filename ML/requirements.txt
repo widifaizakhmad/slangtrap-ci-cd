@@ -90,7 +90,7 @@ termcolor==2.4.0
 threadpoolctl==3.2.0
 tomli==2.0.1
 tqdm==4.66.1
-typing-extensions==4.6.1
+typing-extensions==4.5.0
 urllib3==2.1.0
 virtualenv==20.25.0
 werkzeug==3.0.1
