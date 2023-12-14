@@ -1,7 +1,7 @@
 steps:
   # Step 1: Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/slangtrapdev-notfintel', '-f', 'Dockerfile', './ML']
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/slangtrapdev-notfintel', '-f', 'ML/Dockerfile', 'ML/']
 
   # Step 2: Push the container image to Container Registry
   - name: 'gcr.io/cloud-builders/docker'
