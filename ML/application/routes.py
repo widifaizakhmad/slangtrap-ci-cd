@@ -27,7 +27,7 @@ hands = mp_hands.Hands(static_image_mode=True, min_detection_confidence=0.3)
 
 @app.route('/')
 def index():
-    return 'API and CI/CD is it running though?'
+    return 'API and CI/CD, is it latter running though? <br><br> spoiler alert, IT IS!'
 
 
 @app.route('/sign_language_translation/upload_image/<user>', methods=['POST'])
