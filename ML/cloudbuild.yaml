@@ -1,13 +1,10 @@
 steps:
-  # Step 1: Build the container image
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/slangtrap-fin', '-f', 'Dockerfile', '.' ]
-
-  # Step 2: Push the container image to Container Registry
+    args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/slangtrap-model', '-f', 'Dockerfile', '.' ]
+    
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/slangtrap-fin']
 
-  # Step 3: Deploy the container to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
     entrypoint: 'bash'
     args:
